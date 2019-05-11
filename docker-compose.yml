@@ -1,0 +1,12 @@
+aria2:
+  # image: yahuiwong/frps:0.21.0
+  build: aria2-alpine/.
+  ports:
+    - "6882:6882/udp"
+    - "6881:6881"
+    - "6800:6800"
+  volumes:
+    # - /data/files/aria2Files/:/root/downloads:rw
+    - ./aria2Files/:/root/downloads:rw
+  restart: always
+  container_name: aria2
