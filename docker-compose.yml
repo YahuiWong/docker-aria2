@@ -1,5 +1,4 @@
 aria2:
-  # image: yahuiwong/frps:0.21.0
   build: aria2-alpine/.
   ports:
     - "6882:6882/udp"
